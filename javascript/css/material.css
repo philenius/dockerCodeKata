@@ -1,0 +1,656 @@
+/*
+-----------------------
+color scheme:
+    grey: #455a64
+    dark grey: #1c313a
+    red: #ef5350
+-----------------------
+*/
+
+body {
+    background-color: #E1E2E1;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0px !important;
+}
+
+
+/* nav */
+
+nav {
+    height: 4.3em !important;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+nav .nav-wrapper {
+    background-color: #455a64;
+    min-height: 2.7em !important;
+    height: 2.7em !important;
+}
+
+nav .nav-wrapper .brand-logo {
+    padding-left: 0.3em;
+    padding-top: 0.1em;
+    padding-right: 0.3em;
+    line-height: 2.7rem;
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+nav .nav-wrapper .brand-logo:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+nav .nav-wrapper a:hover,
+nav .nav-wrapper a i:hover {
+    background-color: #455a64 !important;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+nav .nav-wrapper a.button-collapse,
+nav .nav-wrapper a.button-collapse i {
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    padding-top: 0.05em;
+    line-height: 2.7rem;
+    color: rgba(255, 255, 255, 0.8);
+    height: 2.7rem;
+}
+
+nav .nav-content {
+    background-color: #455a64;
+    height: 15em !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0), 0 3px 1px -2px rgba(0, 0, 0, 0.2)
+}
+
+nav .nav-content>a,
+nav .nav-content>a:hover {
+    position: absolute;
+    background-color: #ef5350;
+}
+
+
+/* teaser card */
+
+.teaser-card {
+    display: block;
+    height: 33em;
+    margin-top: 3em;
+    padding-top: 2em;
+    background: url(../img/teaserBackground.jpg) no-repeat;
+    background-size: cover;
+    padding: 0;
+    cursor: auto;
+}
+
+.card#opt-in>.card-image {
+    height: 19em;
+    background: url(../img/optinBackground.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0px -160px;
+}
+
+.card#opt-in>.card-image>.card-title {
+    font-size: 5em;
+    line-height: 1em !important;
+    text-shadow: 2px 2px 9px #455a64;
+}
+
+.card#opt-in div.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    background: rgba(123, 94, 155, 0.2);
+}
+
+.card-title {
+    z-index: 101;
+}
+
+.teaser-card>div.overlay {
+    background: rgba(123, 94, 155, 0.5);
+    height: 100%;
+}
+
+
+/*.teaser-card > span.close-card::before {
+    font-family: 'Material Icons';
+    font-size: 2em;
+    color: #fff;
+    content: 'more_vert';
+    float: right;
+    position: absolute;
+    right: -1em;
+    top: 0.5em;
+    right: 0.4em;
+    top: 0.4em;
+    cursor: pointer;
+}*/
+
+.teaser-card .card-content {}
+
+.teaser-card .card-content .card-title {
+    font-size: 5em;
+    line-height: 1em !important;
+}
+
+.teaser-card .card-content p {
+    text-shadow: 2px 2px 10px black;
+}
+
+.card#opt-out {
+    height: 16em;
+}
+
+.card#opt-out .card-content .card-title {
+    padding-top: 1.5em;
+}
+
+
+/* search card */
+
+.search-card .autocomplete {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.search-card .search-terms {
+    height: auto;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.search-card .search-terms>.chip {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 10px;
+    -ms-flex: auto;
+    flex: auto;
+}
+
+.autocomplete .ac-dropdown .ac-hover {
+    background: #eee;
+}
+
+.search-card .autocomplete {
+    margin-top: 0 !important;
+}
+
+.search-card .autocomplete .ac-input {
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 150px;
+}
+
+.search-card .autocomplete .ac-input input {}
+
+ul#multipleDropdown.dropdown-content li>a {
+    color: #26a69a;
+}
+
+.search-card .card-content#search>.row {
+    margin-bottom: 0px !important;
+}
+
+.search-card #search-submit {
+    background-color: #ef5350;
+}
+
+.search-card #search-submit:hover {
+    background-color: #FF5754;
+}
+
+
+/* search result */
+
+.card.result-card .card-image {
+    background-size: cover !important;
+    background-position: 0px -30px !important;
+    min-width: 100%;
+    height: 17em;
+}
+
+.card.result-card .card-image div {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: 0.0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.card.result-card .card-image div:hover {
+    opacity: 0.7;
+}
+
+.card.result-card .card-image div .card-score {
+    font-size: 5rem;
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-floating.show-search:focus {
+    background-color: #ef5350;
+}
+
+.btn-floating.show-search.mobile {
+    position: fixed;
+    right: 1.6em;
+    bottom: 1em;
+    background-color: #ef5350;
+}
+
+
+/* slick carousel */
+
+.slick-prev::before,
+.slick-next::after {
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: -0.3em;
+    font-family: 'Material Icons';
+    font-size: 3.2em;
+    color: #1c313a;
+    cursor: pointer;
+}
+
+.slick-prev::before {
+    content: 'chevron_left';
+    left: -1rem;
+}
+
+.slick-next::after {
+    content: 'chevron_right';
+    right: -1rem;
+}
+
+.slick-prev,
+.slick-next {
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+
+.slick-prev:hover::before,
+.slick-prev:focus::before,
+.slick-next:hover::after,
+.slick-next:focus::after {
+    opacity: 1;
+}
+
+.slick-prev.slick-disabled::before,
+.slick-next.slick-disabled::after {
+    opacity: .25;
+}
+
+.slick-prev {
+    left: -25px;
+}
+
+.slick-next {
+    right: -25px;
+}
+
+
+/* Slick Carousel Dots */
+
+.slick-dotted.slick-slider {
+    margin-bottom: 30px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+    outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    opacity: 1;
+}
+
+.slick-dots li button:before {
+    line-height: 2.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    font-family: 'Material Icons';
+    font-size: 0.5rem;
+    content: 'lens';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #1c313a;
+}
+
+.container-wrapper {}
+
+.container-wrapper>.barrier>span.close-card::before {
+    font-family: 'Material Icons';
+    font-size: 2rem;
+    color: #fff;
+    content: 'close';
+    float: right;
+    margin-top: 0.5rem;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+.container-wrapper .barrier {
+    background-color: #455a64;
+    display: block;
+    height: 33em;
+    background: url(../img/employeeBackground.jpg) no-repeat;
+    background-size: cover;
+    padding: 0;
+    cursor: auto;
+}
+
+.container-wrapper .barrier .overlay {
+    background: rgba(123, 94, 155, 0.4);
+    height: 100%;
+}
+
+#title-profile {
+    font-size: 5em;
+    font-weight: 300;
+    line-height: 1em !important;
+}
+
+.container-wrapper .container {
+    margin-top: -22em;
+}
+
+.card .card-action a {
+    color: #455a64 !important;
+}
+
+#profile-picture>.card-image {
+    background: url('../img/m1.jpg');
+    background-size: cover;
+    background-position: 0px -50px;
+    min-width: 100%;
+}
+
+/* tabs */
+.tabs .tab a, .tabs .tab a:active {
+    color: rgba(0,0,0,0.87) !important;
+}
+.tabs .indicator {
+    background-color: rgba(69, 90, 100, 0.3);
+}
+
+/* skill bars */
+
+.progress {
+    background-color: rgba(69, 90, 100, 0.3);
+}
+
+.progress .determinate {
+    background-color: #ef5350;
+}
+
+
+/* timeline */
+
+.timeline-card {
+    z-index: 0;
+}
+
+.timeline-card>.card-content .timeline {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.timeline ul {
+    padding: 0em 0 0 2em;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+.timeline ul::before {
+    content: ' ';
+    height: 100%;
+    width: 2px;
+    background-color: #B3B3B3;
+    position: absolute;
+    top: 0;
+    left: 2.45em;
+    z-index: -1;
+}
+
+.timeline li div {
+    display: inline-block;
+    margin: 1em 0;
+    vertical-align: top;
+}
+
+.timeline .bullet {
+    width: 1em;
+    height: 1em;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid #ef5350;
+    background: #fff;
+    z-index: 1;
+    margin-right: 1em;
+}
+
+.timeline .time {
+    width: 20%;
+    font-size: 1em;
+}
+
+.timeline .desc {
+    width: 50%;
+}
+
+.timeline h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #424242;
+    margin: 0;
+}
+
+.timeline h4 {
+    font-size: 1em;
+    font-weight: 300;
+    color: #616161;
+    margin: 0;
+    margin-top: 0.5em;
+}
+
+.timeline .desc:hover h4,
+.timeline .desc:hover h3 {
+    color: #0091ea !important;
+}
+
+
+/* media queries */
+
+@media only screen and (min-width: 0px) and (max-width: 300px) {
+    #welcome-card {
+        height: 16em;
+    }
+    #welcome-card .card-content {
+        padding-top: 18em;
+        font-size: 0.5em;
+    }
+    .slick-next,
+    .slick-prev {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 301px) and (max-width: 600px) {
+    #welcome-card {
+        height: 26em;
+    }
+    #welcome-card .card-content {
+        padding-top: 22em;
+        font-size: 0.7em;
+    }
+    .card.result-card .card-image {
+        height: 24em;
+        background-position: 0em -4em !important;
+    }
+    .card.result-card .card-image div .card-score {
+        display: none;
+    }
+    .card.result-card .card-image div:hover {
+        opacity: 0.0;
+    }
+    .slick-next,
+    .slick-prev {
+        display: none !important;
+    }
+    #profile-picture>.card-image {
+        height: 400px;
+    }
+    .card#opt-in>.card-image {
+        background-position: -50px 0px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 701px) {
+    #welcome-card .card-content {
+        padding-top: 21em;
+    }
+    #welcome-card .card-content p {
+        display: none;
+    }
+    #profile-picture>.card-image {
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 960px) {
+    #welcome-card .card-content {
+        padding-top: 16em;
+    }
+    .card.result-card .card-image {
+        height: 20em;
+    }
+    #profile-picture>.card-image {
+        height: 300px;
+    }
+    .card#opt-in>.card-image {
+        background-position: 0px 0px;
+    }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 992px) {
+    #welcome-card .card-content {
+        padding-top: 22em;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    #welcome-card .card-content {
+        padding-top: 17em;
+    }
+    .card.result-card .card-image {
+        height: 250px;
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1249px) {
+    #welcome-card .card-content {
+        padding-top: 17em;
+    }
+    #profile-picture>.card-image {
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 1250px) and (max-width: 1380px) {
+    #welcome-card .card-content {
+        padding-top: 22em;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    #welcome-card .card-content {
+        padding-top: 23em;
+    }
+    #profile-picture>.card-image {
+        height: 370px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .card.result-card .card-image {
+        height: 20em;
+    }
+}
