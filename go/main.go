@@ -6,6 +6,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
+	"os"
 )
 
 var counter = 0
@@ -35,6 +36,11 @@ func HomeHandler(writer http.ResponseWriter, request *http.Request) {
 	counter++
 	log.Println("visitor count:", counter)
 
-	writer.Write([]byte("hello, world\n"))
+	envVar := os.Getenv("NAME")
+	if len(envVar) == 0 {
+		writer.Write([]byte("environment variable $NAME not set \n"))
+	} else {
+		writer.Write([]byte(fmt.Sprintf("hello, %s \n", envVar)))
+	}
 	writer.Write([]byte(fmt.Sprintf("visitor count: %d", counter)))
 }
